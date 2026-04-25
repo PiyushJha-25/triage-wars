@@ -1,0 +1,26 @@
+name: triage-wars
+version: 1.0.0
+description: Multi-agent disaster response coordination environment where 5 agents with partial information must coordinate after an earthquake to save lives
+author: PiyushJha-25
+theme: multi-agent-interactions
+tags:
+  - disaster-response
+  - multi-agent
+  - partial-observability
+  - coordination
+  - india
+environment:
+  type: multi-agent
+  agents: 5
+  max_steps: 12
+reward:
+  lives_saved:
+    weight: 50
+  speed:
+    weight: 15
+  hospital_communication:
+    weight: 15
+  no_duplicates:
+    weight: 10
+  panic_control:
+    weight: 10
