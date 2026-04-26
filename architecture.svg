@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5"
+        markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="45" font-family="sans-serif" font-size="24" font-weight="bold" fill="#333" text-anchor="middle">Triage Wars — Partial Observability Architecture</text>
+
+  <!-- Arrows -->
+  <line x1="400" y1="150" x2="400" y2="225" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="580" y1="175" x2="500" y2="250" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="580" y1="375" x2="500" y2="300" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="220" y1="375" x2="300" y2="300" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="220" y1="175" x2="300" y2="250" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Center Box: Environment -->
+  <rect x="300" y="225" width="200" height="100" rx="10" ry="10" fill="#ffebee" stroke="#d32f2f" stroke-width="3"/>
+  <text x="400" y="270" font-family="sans-serif" font-size="18" font-weight="bold" fill="#b71c1c" text-anchor="middle">Earthquake</text>
+  <text x="400" y="295" font-family="sans-serif" font-size="18" font-weight="bold" fill="#b71c1c" text-anchor="middle">Disaster Zone</text>
+
+  <!-- NDRF (Top) -->
+  <rect x="310" y="80" width="180" height="70" rx="8" ry="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="400" y="105" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0d47a1" text-anchor="middle">NDRF Commander</text>
+  <text x="400" y="125" font-family="sans-serif" font-size="12" fill="#333" text-anchor="middle">Sees: Local debris,</text>
+  <text x="400" y="140" font-family="sans-serif" font-size="12" fill="#333" text-anchor="middle">trapped victims</text>
+
+  <!-- Hospital (Top Right) -->
+  <rect x="580" y="140" width="180" height="70" rx="8" ry="8" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+  <text x="670" y="165" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1b5e20" text-anchor="middle">Hospital Director</text>
+  <text x="670" y="185" font-family="sans-serif" font-size="12" fill="#333" text-anchor="middle">Sees: Bed capacity,</text>
+  <text x="670" y="200" font-family="sans-serif" font-size="12" fill="#333" text-anchor="middle">medical supplies</text>
+
+  <!-- Government (Bottom Right) -->
+  <rect x="580" y="340" width="180" height="70" rx="8" ry="8" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="670" y="365" font-family="sans-serif" font-size="14" font-weight="bold" fill="#e65100" text-anchor="middle">Government Official</text>
+  <text x="670" y="385" font-family="sans-serif" font-size="12" fill="#333" text-anchor="middle">Sees: Budget,</text>
+  <text x="670" y="400" font-family="sans-serif" font-size="12" fill="#333" text-anchor="middle">overall casualties</text>
+
+  <!-- NGO (Bottom Left) -->
+  <rect x="40" y="340" width="180" height="70" rx="8" ry="8" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="130" y="365" font-family="sans-serif" font-size="14" font-weight="bold" fill="#4a148c" text-anchor="middle">NGO Coordinator</text>
+  <text x="130" y="385" font-family="sans-serif" font-size="12" fill="#333" text-anchor="middle">Sees: Volunteers,</text>
+  <text x="130" y="400" font-family="sans-serif" font-size="12" fill="#333" text-anchor="middle">local supplies</text>
+
+  <!-- Media (Top Left) -->
+  <rect x="40" y="140" width="180" height="70" rx="8" ry="8" fill="#f5f5f5" stroke="#616161" stroke-width="2"/>
+  <text x="130" y="165" font-family="sans-serif" font-size="14" font-weight="bold" fill="#212121" text-anchor="middle">Media Spokesperson</text>
+  <text x="130" y="185" font-family="sans-serif" font-size="12" fill="#333" text-anchor="middle">Sees: Public sentiment,</text>
+  <text x="130" y="200" font-family="sans-serif" font-size="12" fill="#333" text-anchor="middle">verified news</text>
+
+</svg>
