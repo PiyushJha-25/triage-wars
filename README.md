@@ -1,6 +1,6 @@
 ---
 title: Triage Wars
-emoji: ??
+emoji: 🚨
 colorFrom: red
 colorTo: red
 sdk: docker
