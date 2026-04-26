@@ -26,6 +26,8 @@ class TriageWarsEnvironment(Environment[TriageAction, TriageObservation, TriageS
             "total_rescued": 0,
             "emergency_declared": False,
             "hospital_warned": False,
+            "hospital_warned_rewarded": False,
+            "emergency_rewarded": False,
             "episode_done": False,
             "current_reward": 0.0,
             "step_number": 0
@@ -34,6 +36,26 @@ class TriageWarsEnvironment(Environment[TriageAction, TriageObservation, TriageS
         return self._get_obs()
 
     def step(self, action: TriageAction, timeout_s: Optional[float] = None, **kwargs: Any) -> TriageObservation:
+        # Validate and cap resources
+        total_ndrf_teams = action.ndrf_building_a_teams + action.ndrf_building_b_teams + action.ndrf_building_c_teams
+        available_ndrf = self._state["ndrf_teams"]
+        if total_ndrf_teams > available_ndrf:
+            scale = available_ndrf / total_ndrf_teams
+            a, b, c = action.ndrf_building_a_teams * scale, action.ndrf_building_b_teams * scale, action.ndrf_building_c_teams * scale
+            action.ndrf_building_a_teams, action.ndrf_building_b_teams, action.ndrf_building_c_teams = int(a), int(b), int(c)
+            
+            remainder = available_ndrf - (action.ndrf_building_a_teams + action.ndrf_building_b_teams + action.ndrf_building_c_teams)
+            fracs = [('a', a - int(a)), ('b', b - int(b)), ('c', c - int(c))]
+            fracs.sort(key=lambda x: x[1], reverse=True)
+            
+            for i in range(remainder):
+                if fracs[i][0] == 'a': action.ndrf_building_a_teams += 1
+                elif fracs[i][0] == 'b': action.ndrf_building_b_teams += 1
+                elif fracs[i][0] == 'c': action.ndrf_building_c_teams += 1
+
+        if action.ngo_volunteers_deployed > self._state["ngo_volunteers"]:
+            action.ngo_volunteers_deployed = self._state["ngo_volunteers"]
+
         # Simulate rescues based on action
         rescued_a = min(self._state["buildings"]["A"]["trapped"], action.ndrf_building_a_teams * 20)
         self._state["buildings"]["A"]["trapped"] -= rescued_a
@@ -67,18 +89,25 @@ class TriageWarsEnvironment(Environment[TriageAction, TriageObservation, TriageS
             self._state["emergency_declared"] = True
 
         # Calculate reward
-        lives_saved_percentage = (self._state["total_rescued"] / self._state["total_initial_trapped"]) if self._state["total_initial_trapped"] > 0 else 0
+        reward = (newly_rescued / self._state["total_initial_trapped"]) * 50.0 if self._state["total_initial_trapped"] > 0 else 0.0
         
         duplicate = False
         if action.ngo_building_assigned == "A" and action.ndrf_building_a_teams > 0: duplicate = True
         if action.ngo_building_assigned == "B" and action.ndrf_building_b_teams > 0: duplicate = True
         if action.ngo_building_assigned == "C" and action.ndrf_building_c_teams > 0: duplicate = True
 
-        reward = (lives_saved_percentage * 50.0) - (self._state["hours_elapsed"] * 1.5)
-        if self._state["hospital_warned"]:
+        reward -= 1.5
+
+        if self._state["hospital_warned"] and not self._state["hospital_warned_rewarded"]:
             reward += 15.0
+            self._state["hospital_warned_rewarded"] = True
+
         if not duplicate:
             reward += 10.0
+
+        if self._state["emergency_declared"] and not self._state["emergency_rewarded"]:
+            reward += 5.0
+            self._state["emergency_rewarded"] = True
 
         self._state["current_reward"] = float(reward)
 
