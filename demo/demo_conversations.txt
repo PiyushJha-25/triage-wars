@@ -1,0 +1,409 @@
+=== EPISODE: UNTRAINED ===
+Initial Trapped: 1045
+
+--- Step 1 (Hour 2) ---
+Action: {
+  "deploy_building_1": 4,
+  "deploy_building_2": 5,
+  "deploy_building_3": 0,
+  "issue_hospital_warning": false,
+  "surge_activation": true,
+  "dispatch_ambulances": 10,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 323,
+  "volunteer_deployment_location": "North Zone",
+  "hold_press_briefing": false,
+  "broadcast_panic_message": "Help is coming"
+}
+Reward: 5.84
+Total Rescued: 143 / 1045
+
+--- Step 2 (Hour 4) ---
+Action: {
+  "deploy_building_1": 3,
+  "deploy_building_2": 4,
+  "deploy_building_3": 5,
+  "issue_hospital_warning": true,
+  "surge_activation": true,
+  "dispatch_ambulances": 2,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 365,
+  "volunteer_deployment_location": "Hospital",
+  "hold_press_briefing": false,
+  "broadcast_panic_message": "Evacuate"
+}
+Reward: 9.67
+Total Rescued: 244 / 1045
+
+--- Step 3 (Hour 6) ---
+Action: {
+  "deploy_building_1": 1,
+  "deploy_building_2": 0,
+  "deploy_building_3": 5,
+  "issue_hospital_warning": true,
+  "surge_activation": false,
+  "dispatch_ambulances": 3,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 423,
+  "volunteer_deployment_location": "Hospital",
+  "hold_press_briefing": false,
+  "broadcast_panic_message": "Help is coming"
+}
+Reward: 13.84
+Total Rescued: 352 / 1045
+
+--- Step 4 (Hour 8) ---
+Action: {
+  "deploy_building_1": 5,
+  "deploy_building_2": 2,
+  "deploy_building_3": 1,
+  "issue_hospital_warning": true,
+  "surge_activation": false,
+  "dispatch_ambulances": 9,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 234,
+  "volunteer_deployment_location": "Hospital",
+  "hold_press_briefing": false,
+  "broadcast_panic_message": "Evacuate"
+}
+Reward: 15.52
+Total Rescued: 408 / 1045
+
+--- Step 5 (Hour 10) ---
+Action: {
+  "deploy_building_1": 4,
+  "deploy_building_2": 0,
+  "deploy_building_3": 0,
+  "issue_hospital_warning": true,
+  "surge_activation": true,
+  "dispatch_ambulances": 2,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 69,
+  "volunteer_deployment_location": "South Zone",
+  "hold_press_briefing": false,
+  "broadcast_panic_message": "Evacuate"
+}
+Reward: 20.69
+Total Rescued: 537 / 1045
+
+--- Step 6 (Hour 12) ---
+Action: {
+  "deploy_building_1": 3,
+  "deploy_building_2": 2,
+  "deploy_building_3": 2,
+  "issue_hospital_warning": false,
+  "surge_activation": true,
+  "dispatch_ambulances": 10,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 221,
+  "volunteer_deployment_location": "Hospital",
+  "hold_press_briefing": true,
+  "broadcast_panic_message": "Evacuate"
+}
+Reward: 24.29
+Total Rescued: 633 / 1045
+
+--- Step 7 (Hour 14) ---
+Action: {
+  "deploy_building_1": 4,
+  "deploy_building_2": 5,
+  "deploy_building_3": 1,
+  "issue_hospital_warning": false,
+  "surge_activation": false,
+  "dispatch_ambulances": 5,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 352,
+  "volunteer_deployment_location": "North Zone",
+  "hold_press_briefing": true,
+  "broadcast_panic_message": "Help is coming"
+}
+Reward: 26.01
+Total Rescued: 690 / 1045
+
+--- Step 8 (Hour 16) ---
+Action: {
+  "deploy_building_1": 5,
+  "deploy_building_2": 0,
+  "deploy_building_3": 5,
+  "issue_hospital_warning": true,
+  "surge_activation": true,
+  "dispatch_ambulances": 8,
+  "declare_emergency": true,
+  "allocate_funds_lakhs": 344,
+  "volunteer_deployment_location": "Hospital",
+  "hold_press_briefing": true,
+  "broadcast_panic_message": "Stay calm"
+}
+Reward: 30.09
+Total Rescued: 796 / 1045
+
+--- Step 9 (Hour 18) ---
+Action: {
+  "deploy_building_1": 2,
+  "deploy_building_2": 1,
+  "deploy_building_3": 5,
+  "issue_hospital_warning": true,
+  "surge_activation": true,
+  "dispatch_ambulances": 3,
+  "declare_emergency": true,
+  "allocate_funds_lakhs": 384,
+  "volunteer_deployment_location": "South Zone",
+  "hold_press_briefing": false,
+  "broadcast_panic_message": "Help is coming"
+}
+Reward: 32.34
+Total Rescued: 864 / 1045
+
+--- Step 10 (Hour 20) ---
+Action: {
+  "deploy_building_1": 4,
+  "deploy_building_2": 2,
+  "deploy_building_3": 4,
+  "issue_hospital_warning": true,
+  "surge_activation": false,
+  "dispatch_ambulances": 4,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 80,
+  "volunteer_deployment_location": "South Zone",
+  "hold_press_briefing": false,
+  "broadcast_panic_message": "Evacuate"
+}
+Reward: 35.98
+Total Rescued: 961 / 1045
+
+--- Step 11 (Hour 22) ---
+Action: {
+  "deploy_building_1": 3,
+  "deploy_building_2": 1,
+  "deploy_building_3": 0,
+  "issue_hospital_warning": false,
+  "surge_activation": true,
+  "dispatch_ambulances": 3,
+  "declare_emergency": true,
+  "allocate_funds_lakhs": 89,
+  "volunteer_deployment_location": "Hospital",
+  "hold_press_briefing": true,
+  "broadcast_panic_message": "Help is coming"
+}
+Reward: 39.00
+Total Rescued: 1045 / 1045
+
+Final Reward (UNTRAINED): 253.28
+Final Rescued (UNTRAINED): 1045
+==============================
+
+=== EPISODE: TRAINED ===
+Initial Trapped: 1104
+
+--- Step 1 (Hour 2) ---
+Action: {
+  "deploy_building_1": 2,
+  "deploy_building_2": 2,
+  "deploy_building_3": 2,
+  "issue_hospital_warning": false,
+  "surge_activation": false,
+  "dispatch_ambulances": 9,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 492,
+  "volunteer_deployment_location": "South Zone",
+  "hold_press_briefing": true,
+  "broadcast_panic_message": "Stay calm"
+}
+Reward: 3.94
+Total Rescued: 109 / 1104
+
+--- Step 2 (Hour 4) ---
+Action: {
+  "deploy_building_1": 1,
+  "deploy_building_2": 2,
+  "deploy_building_3": 3,
+  "issue_hospital_warning": false,
+  "surge_activation": false,
+  "dispatch_ambulances": 9,
+  "declare_emergency": true,
+  "allocate_funds_lakhs": 264,
+  "volunteer_deployment_location": "Hospital",
+  "hold_press_briefing": true,
+  "broadcast_panic_message": "Stay calm"
+}
+Reward: 8.42
+Total Rescued: 230 / 1104
+
+--- Step 3 (Hour 6) ---
+Action: {
+  "deploy_building_1": 5,
+  "deploy_building_2": 1,
+  "deploy_building_3": 0,
+  "issue_hospital_warning": true,
+  "surge_activation": false,
+  "dispatch_ambulances": 4,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 404,
+  "volunteer_deployment_location": "North Zone",
+  "hold_press_briefing": false,
+  "broadcast_panic_message": "Help is coming"
+}
+Reward: 9.73
+Total Rescued: 281 / 1104
+
+--- Step 4 (Hour 8) ---
+Action: {
+  "deploy_building_1": 5,
+  "deploy_building_2": 5,
+  "deploy_building_3": 1,
+  "issue_hospital_warning": false,
+  "surge_activation": false,
+  "dispatch_ambulances": 10,
+  "declare_emergency": true,
+  "allocate_funds_lakhs": 363,
+  "volunteer_deployment_location": "Hospital",
+  "hold_press_briefing": true,
+  "broadcast_panic_message": "Stay calm"
+}
+Reward: 11.62
+Total Rescued: 345 / 1104
+
+--- Step 5 (Hour 10) ---
+Action: {
+  "deploy_building_1": 0,
+  "deploy_building_2": 1,
+  "deploy_building_3": 0,
+  "issue_hospital_warning": true,
+  "surge_activation": false,
+  "dispatch_ambulances": 9,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 149,
+  "volunteer_deployment_location": "North Zone",
+  "hold_press_briefing": false,
+  "broadcast_panic_message": "Evacuate"
+}
+Reward: 16.15
+Total Rescued: 467 / 1104
+
+--- Step 6 (Hour 12) ---
+Action: {
+  "deploy_building_1": 2,
+  "deploy_building_2": 4,
+  "deploy_building_3": 5,
+  "issue_hospital_warning": false,
+  "surge_activation": false,
+  "dispatch_ambulances": 7,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 378,
+  "volunteer_deployment_location": "Hospital",
+  "hold_press_briefing": true,
+  "broadcast_panic_message": "Stay calm"
+}
+Reward: 20.13
+Total Rescued: 577 / 1104
+
+--- Step 7 (Hour 14) ---
+Action: {
+  "deploy_building_1": 2,
+  "deploy_building_2": 4,
+  "deploy_building_3": 1,
+  "issue_hospital_warning": true,
+  "surge_activation": true,
+  "dispatch_ambulances": 4,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 113,
+  "volunteer_deployment_location": "South Zone",
+  "hold_press_briefing": true,
+  "broadcast_panic_message": "Help is coming"
+}
+Reward: 25.65
+Total Rescued: 721 / 1104
+
+--- Step 8 (Hour 16) ---
+Action: {
+  "deploy_building_1": 1,
+  "deploy_building_2": 4,
+  "deploy_building_3": 0,
+  "issue_hospital_warning": false,
+  "surge_activation": false,
+  "dispatch_ambulances": 1,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 14,
+  "volunteer_deployment_location": "Hospital",
+  "hold_press_briefing": true,
+  "broadcast_panic_message": "Evacuate"
+}
+Reward: 27.28
+Total Rescued: 779 / 1104
+
+--- Step 9 (Hour 18) ---
+Action: {
+  "deploy_building_1": 4,
+  "deploy_building_2": 1,
+  "deploy_building_3": 4,
+  "issue_hospital_warning": true,
+  "surge_activation": true,
+  "dispatch_ambulances": 5,
+  "declare_emergency": true,
+  "allocate_funds_lakhs": 392,
+  "volunteer_deployment_location": "Hospital",
+  "hold_press_briefing": false,
+  "broadcast_panic_message": "Evacuate"
+}
+Reward: 30.13
+Total Rescued: 864 / 1104
+
+--- Step 10 (Hour 20) ---
+Action: {
+  "deploy_building_1": 3,
+  "deploy_building_2": 3,
+  "deploy_building_3": 5,
+  "issue_hospital_warning": false,
+  "surge_activation": false,
+  "dispatch_ambulances": 9,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 380,
+  "volunteer_deployment_location": "Hospital",
+  "hold_press_briefing": false,
+  "broadcast_panic_message": "Stay calm"
+}
+Reward: 33.52
+Total Rescued: 961 / 1104
+
+--- Step 11 (Hour 22) ---
+Action: {
+  "deploy_building_1": 0,
+  "deploy_building_2": 5,
+  "deploy_building_3": 3,
+  "issue_hospital_warning": false,
+  "surge_activation": true,
+  "dispatch_ambulances": 5,
+  "declare_emergency": true,
+  "allocate_funds_lakhs": 40,
+  "volunteer_deployment_location": "Hospital",
+  "hold_press_briefing": false,
+  "broadcast_panic_message": "Stay calm"
+}
+Reward: 38.68
+Total Rescued: 1097 / 1104
+
+--- Step 12 (Hour 24) ---
+Action: {
+  "deploy_building_1": 0,
+  "deploy_building_2": 1,
+  "deploy_building_3": 2,
+  "issue_hospital_warning": true,
+  "surge_activation": false,
+  "dispatch_ambulances": 4,
+  "declare_emergency": false,
+  "allocate_funds_lakhs": 439,
+  "volunteer_deployment_location": "Hospital",
+  "hold_press_briefing": true,
+  "broadcast_panic_message": "Evacuate"
+}
+Reward: 38.00
+Total Rescued: 1104 / 1104
+
+Final Reward (TRAINED): 263.26
+Final Rescued (TRAINED): 1104
+==============================
+
+
+=== SUMMARY ===
+Total Rescued | UNTRAINED: 1045 | TRAINED: 1104
+Total Reward  | UNTRAINED: 253.28 | TRAINED: 263.26

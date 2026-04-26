@@ -1,3 +1,11 @@
+---
+title: Triage Wars
+emoji: ??
+colorFrom: red
+colorTo: red
+sdk: docker
+pinned: false
+---
 # Triage-wars
 Multi-agent disaster response AI environment
 
@@ -49,3 +57,4 @@ Right now, the rescue rates we have are just simple simulations. If we could get
 ```bash
 uvicorn triage_wars.server.app:app --host 0.0.0.0 --port 8000
 ```
+
